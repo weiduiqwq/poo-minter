@@ -52,6 +52,7 @@ func main() {
 					log.Printf("minter.Mint 错误：%+v", err)
 				}
 			}(minterData)
+			time.Sleep(1 * time.Second)
 		}
 
 		wg.Wait()
